@@ -5,15 +5,14 @@ Steps to have access to jupyterlab on a remote server :
   ssh -L 8080:localhost:8080 serever_ip
 2. On the base environment install conda-nb  
  conda install -c conda-forge nb_conda_kernels
-3. Install jupyterlab on the environment  
-conda config --add channels conda-forge  
-conda config --set channel_priority strict  
-conda install jupyterlab  
+3. Install jupyterlab on the environment    
+conda install -c conda-forge jupyterlab
 4. install ipykernel on the environment   
  conda install ipykernel  
 Note : If you have installed nb_conda_kernels, and want to create a new conda environment and have it accessible   right away then:    
 conda create -n new_env_name ipykernel  
-
+To open upyterlab
+jupyter-lab --no-browser --port 8080   
 To have updated modules automatically be loaded in a jupyter-notebook add the following command at the start of your notebook  
 %load_ext autoreload  
 %autoreload 2  
