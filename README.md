@@ -9,10 +9,6 @@ Steps to have access to jupyterlab on a remote server :
  conda install ipykernel
 Note : If you have installed nb_conda_kernels, and want to create a new conda environment and have it accessible right away then
 4. conda create -n new_env_name ipykernel
-
-
-
-
-
+To have updated modules automatically be loaded in a jupyter-notebook add the following command at the start of your notebook
 %load_ext autoreload
 %autoreload 2
