@@ -11,8 +11,8 @@ conda install -c conda-forge jupyterlab
  conda install ipykernel  
 Note : If you have installed nb_conda_kernels, and want to create a new conda environment and have it accessible   right away then:    
 conda create -n new_env_name ipykernel  
-To open upyterlab
-jupyter-lab --no-browser --port 8080   
-To have updated modules automatically be loaded in a jupyter-notebook add the following command at the start of your notebook  
-%load_ext autoreload  
+5. To open upyterlab  
+jupyter-lab --no-browser --port 8080     
+6. To have updated modules automatically be loaded in a jupyter-notebook add the following command at the start of your notebook    
+ %load_ext autoreload  
 %autoreload 2  
