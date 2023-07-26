@@ -16,3 +16,9 @@ jupyter-lab --no-browser --port 8080
 6. To have updated modules automatically be loaded in a jupyter-notebook add the following command at the start of your notebook    
  %load_ext autoreload  
 %autoreload 2  
+
+
+$ conda activate cenv           # . ./cenv/bin/activate in case of virtualenv
+(cenv)$ conda install ipykernel
+(cenv)$ ipython kernel install --user --name=<any_name_for_kernel>
+(cenv)$ conda deactivate
