@@ -17,7 +17,7 @@ jupyter-lab --no-browser --port 8080
  %load_ext autoreload  
 %autoreload 2  
 
-
+# Solution 2 
 $ conda activate cenv           # . ./cenv/bin/activate in case of virtualenv
 (cenv)$ conda install ipykernel
 (cenv)$ ipython kernel install --user --name=<any_name_for_kernel>
